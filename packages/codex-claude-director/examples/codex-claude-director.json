@@ -1,0 +1,8 @@
+{
+  "checks": [
+    { "name": "unit", "argv": ["npm", "test"], "timeoutSec": 600 },
+    { "name": "lint", "argv": ["npm", "run", "lint"], "timeoutSec": 300, "required": false }
+  ],
+  "claudeAllowedBash": ["Bash(npm test)", "Bash(npm test *)", "Bash(npm run lint)"],
+  "defaultScope": ["src", "test"]
+}
