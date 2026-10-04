@@ -1,0 +1,19 @@
+{
+  "name": "codex-claude-director",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Unofficial extension: Codex directs, Claude Code implements. Local MCP coordinator with shared capacity reservations, git worktrees and review gating.",
+  "license": "Apache-2.0",
+  "engines": { "node": ">=20" },
+  "bin": {
+    "ccd": "bin/ccd.mjs",
+    "ccd-mcp": "bin/ccd-mcp.mjs",
+    "ccd-statusline": "bin/ccd-statusline.mjs"
+  },
+  "scripts": {
+    "test": "node --test --test-concurrency=4 test/*.test.mjs",
+    "check": "node --check src/*.mjs bin/*.mjs scripts/*.mjs",
+    "smoke:real": "node scripts/real-smoke.mjs"
+  }
+}
