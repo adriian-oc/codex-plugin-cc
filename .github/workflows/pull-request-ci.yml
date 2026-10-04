@@ -33,3 +33,6 @@ jobs:
 
       - name: Run build
         run: npm run build
+
+      - name: Run codex-claude-director tests (simulated workers)
+        run: npm run test:director

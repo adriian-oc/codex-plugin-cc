@@ -1,5 +1,11 @@
 # Codex plugin for Claude Code
 
+> **Fork note (unofficial).** This fork adds an independent extension in
+> [`packages/codex-claude-director`](packages/codex-claude-director/README.md) for the
+> opposite direction: Codex directs and delegates bounded tasks to Claude Code through a
+> local MCP server with shared capacity reservations, git worktrees and review gating.
+> It is not an official OpenAI or Anthropic product. The original plugin below is unchanged.
+
 Use Codex from inside Claude Code for code reviews or to delegate tasks to Codex.
 
 This plugin is for Claude Code users who want an easy way to start using Codex from the workflow
